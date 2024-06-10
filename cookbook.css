@@ -2,7 +2,7 @@ a {
     display: block;
 }
 .cafeLanche {
-    color: yellow;
+    color: rgb(196, 19, 196);
 }
 .almocoJanta {
     color: red;
@@ -11,5 +11,5 @@ a {
     color: green;
 }
 .sobremesa {
-    color: rgb(204, 0, 255);
+    color: blue;
 }
