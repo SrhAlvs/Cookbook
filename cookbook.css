@@ -1,15 +1,54 @@
+body {
+    background-color: #000000; /*cor do fundo*/
+    color: #ffffff; /*se o fundo é escuro, as letras devem ser mais claras/visíveis*/
+}
+h1 {
+    font-size: 4rem; /*px bloqueia o tamanho da fonte, rem mantém a página responsiva e acessível*/
+    line-height: 1.2; /*altura de linha*/
+    color: #0b93ab;
+    text-align: center; /*alinhar texto*/
+    margin-bottom: 2rem;
+}
+h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+button {
+    color: #ffffff;
+    font-size: 1.5rem;
+    padding: 1rem 2rem; /*alterar o tamanho da caixa*/
+    background-color: #0b93ab;
+    border-radius: 3rem; /*curva das quinas*/
+    border-color: #086879;
+    transition: background-color 300ms; /*como a cor do fundo vai mudar (a:hover), vamos mudar fazendo uma transição, ao invés de mudar direto*/
+    margin-bottom: 3rem;
+}
+button:hover { /*"hover" = instruções para quando passar o cursor por cima*/
+    background-color: #086879; /*mudar a cor de fundo*/
+}
 a {
     display: block;
+    text-decoration: none; /*para tirar a decoração automática da tag "a" (sublinhado)*/
+    color: white;
+    text-shadow: 0px 3px 3px #000000;
+    padding: .5rem;
+    border-radius: 3rem;
+    font-size: 1.5rem;
 }
 .cafeLanche {
-    color: rgb(196, 19, 196);
+    background-color: #48a8e0;
 }
 .almocoJanta {
-    color: red;
+    background-color: #2d58b6;
 }
 .snacks {
-    color: green;
+    background-color: #132198;
 }
 .sobremesa {
-    color: blue;
+    background-color: #460ea8;
+}
+@media (width < 40rem){ /*se a largura do dispositivo for menor que 40rem*/
+    html {
+        font-size: 70%; /*altere o font-size de todo o html para 70%*/
+    }
 }

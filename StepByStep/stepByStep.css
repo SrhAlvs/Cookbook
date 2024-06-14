@@ -1,3 +1,37 @@
+body {
+    background-color: black; /*cor do fundo*/
+    color: white; /*se o fundo é escuro, as letras devem ser mais claras/visíveis*/
+}
+a {
+    text-decoration: none; /*para tirar a decoração automática da tag "a" (sublinhado)*/
+    color: white;
+    font-size: 1.5rem;
+    text-decoration: underline wavy #000000;
+    background-color: #0b93ab;
+    padding: 1rem;
+    border-radius: 3rem;
+}
+h1 {
+    font-size: 3rem; /*px bloqueia o tamanho da fonte, rem mantém a página responsiva e acessível*/
+    color: #0b93ab;
+}
+h4 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
 img {
-    height: 350px;
+    height: 30rem;
+    border-radius: 2rem;
+}
+h2 {
+    font-size: 2rem;
+    text-decoration: underline wavy #0b93ab;
+}
+p {
+    font-size: 1.5rem;
+}
+@media (width < 40rem){ /*se a largura do dispositivo for menor que 40rem*/
+    html {
+        font-size: 70%; /*altere o font-size de todo o html para 70%*/
+    }
 }

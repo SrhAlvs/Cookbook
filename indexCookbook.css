@@ -1,0 +1,34 @@
+body {
+    background-color: black; /*cor do fundo*/
+    color: white; /*se o fundo é escuro, as letras devem ser mais claras/visíveis*/
+    text-align: center; /*alinhar texto*/
+    align-content: center; /*alinhar conteúdo*/
+}
+h1 {
+    font-size: 4rem; /*px bloqueia o tamanho da fonte, rem mantém a página responsiva e acessível*/
+    line-height: 1.2; /*altura de linha*/
+}
+h1 span {
+    color: #0b93ab;
+}
+p {
+    font-size: 2.5rem;
+    margin-bottom: 4.5rem;
+}
+a {
+    color: white;
+    background-color: #0b93ab;
+    text-decoration: none; /*para tirar a decoração automática da tag "a" (sublinhado)*/
+    padding: 1rem 2rem; /*alterar o tamanho da caixa*/
+    font-size: 2rem;
+    border-radius: 3rem; /*curva das quinas*/
+    transition: background-color 300ms; /*como a cor do fundo vai mudar (a:hover), vamos mudar fazendo uma transição, ao invés de mudar direto*/
+}
+a:hover { /*"hover" = instruções para quando passar o cursor por cima*/
+    background-color: #086879; /*mudar a cor de fundo*/
+}
+@media (width < 40rem){ /*se a largura do dispositivo for menor que 40rem*/
+    html {
+        font-size: 70%; /*altere o font-size de todo o html para 70%*/
+    }
+}
